@@ -9,9 +9,9 @@
 // On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
 
 var gameData = {
-    questions : [],
-    answers: [[],[]],
-    correctAnswers: [],
+    questions : ["What is the color of the sky?", "What is 2+2"],
+    answers: [["blue", "red", "green", "purple"],["5", "2", "4", "8"]],
+    correctAnswers: ["blue","4"],
     userCorrectAnswers: [],
     userIncorrectAnswers: [],
     userNoAnswers: [],
@@ -22,4 +22,28 @@ var gameData = {
         this.userNoAnswers = [];
     }
 };
+
+function displayQuestions(){
+    $("#question").text(gameData.questions[0]);
+
+};
+
+function displayAnswers(){
+    
+};
+
+function displayCorrectAnswer(){
+    
+};
+
+$(document).ready(function() {
+
+    $("button").click(function(){
+        console.log("in click");
+        $("#theGame").show();
+        $("#theButton").hide();
+        displayQuestions();
+
+    });
+});
 
