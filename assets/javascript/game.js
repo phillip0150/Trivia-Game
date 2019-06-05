@@ -9,12 +9,23 @@
 // On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
 
 var gameData = {
-    questions : ["What is the color of the sky?", "What is 2+2"],
-    answers: [["blue", "red", "green", "purple"],["5", "2", "4", "8"]],
-    correctAnswers: ["blue","4"],
+    questions : ["During the early stages of production, WHO auditioned for the role of Jerry.",
+        "Who does the voice Jerry?",
+        "A poster of WHAT RAPPER(S) can be seen in Summer's room on the door",
+        "Who does the voice of Beth?",
+        "When does season 3 come out?"],
+    answers: {
+        a0: ['Bryan Cranston', 'The Rock', 'Kevin Hart', 'Brad Pitt'],
+        a1: ['Justin Bieber', 'Chris Patt', 'Chris Parnell', 'Bryan Cranston'],
+        a2: ["Tupac Shakur", "Lil Uzi Vert", "Wu-Tang Clan", "Ice Cube"],
+        a3: ["Taylor Swift", "Sarah Chalke", "Naomi Scott", "Emilia Clarke"],
+        a4: ["12-12-19", "08-18-19", "07-19-19", "It's already out"]
+    },
+    correctAnswers: ["Bryan Cranston","Chris Parnell", "Tupac Shakur", "Sarah Chalke", "It's already out"],
     userCorrectAnswers: [],
     userIncorrectAnswers: [],
     userNoAnswers: [],
+    questionCount: 0,
 
     restart: function() {
         this.userCorrectAnswers = [];
@@ -23,27 +34,42 @@ var gameData = {
     }
 };
 
-function displayQuestions(){
-    $("#question").text(gameData.questions[0]);
+function displayQuestions(x){
+    $("#question").text(gameData.questions[x]);
 
 };
 
-function displayAnswers(){
+function displayAnswers(answerObject){
+    $("#answer0").html("<button>"+answerObject[0]+"</button><br>");
+    $("#answer1").html("<button>"+answerObject[1]+"</button><br>");
+    $("#answer2").html("<button>"+answerObject[2]+"</button><br>");
+    $("#answer3").html("<button>"+answerObject[3]+"</button><br>");
     
 };
 
-function displayCorrectAnswer(){
+//function to display the correct answer
+//here the user will know if they got the answer right or wrong (update text)
+function displayCorrectAnswer(rightWrong, theCorrectAnswer){
+    $("#rightwrong").text(rightWrong);
+    $("#theCorrectAnswer").text(theCorrectAnswer);
     
 };
 
 $(document).ready(function() {
 
-    $("button").click(function(){
+    $("#theButton").click(function(){
         console.log("in click");
         $("#theGame").show();
         $("#theButton").hide();
-        displayQuestions();
+        displayQuestions(0);
+        displayAnswers(gameData.answers.a0);
 
     });
+
+    $("#answer0").click(function(){
+
+    });
+
+    
 });
 
