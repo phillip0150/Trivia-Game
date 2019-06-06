@@ -3,10 +3,10 @@ Do you know everything about Rick and Morty? Test your skills with the Rick and 
 
 Once you click on start:
 
-> You have 30's to answer the Rick and Morty Trivia question.
-> Once you select an answer, you are presented with the correct choice.
-> After you see the correct choice, the game automatically switches to the next question.
-> At the end of the game, you are presented with your score and the option to play again.
+> *You have 30's to answer the Rick and Morty Trivia question.
+> *Once you select an answer, you are presented with the correct choice.
+> *After you see the correct choice, the game automatically switches to the next question.
+> *At the end of the game, you are presented with your score and the option to play again.
 
 
 ## Screen Shot(s)
