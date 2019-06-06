@@ -29,4 +29,12 @@ h1 {
     padding: 5%;
 }
 
+#loading {
+    width: 5em;
+}
+
+#answerImage {
+    width: 30em;
+}
+
 

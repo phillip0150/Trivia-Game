@@ -32,7 +32,6 @@ function displayQuestion() {
     if (count > 4) {
         endGame();
     }
-
 }
 
 //function to run timer
@@ -53,11 +52,8 @@ function runTimer() {
 //we display the correct answer to the user
 //add 1 to noAnswer and count
 function decrementTime() {
-
     seconds--;
-
     $("#time").html("<h2>" + seconds + "</h2>");
-
     if (seconds <= 0) {
     stopTimer();
     runDisplayCorrectAnswer("Wrong", "Correct answer is " +answers[count]);
@@ -74,7 +70,7 @@ function decrementTime() {
 function stopTimer() {
     clearInterval(timerId);
     running = false;
-    $("#time").html('<img alt="activity indicator" src="assets/images/ajax-loader.gif" width="8%">');
+    $("#time").html('<img alt="activity indicator" src="assets/images/ajax-loader.gif" id="loading">');
     seconds = 30;
 }
 
@@ -108,7 +104,7 @@ function runDisplayCorrectAnswer(rightWrong, theCorrectAnswer){
     if(!textAnswer){
         displayCorrectId = setInterval(function(){
             answerSeconds--;
-            $("#showAnswer").html('<p>'+rightWrong + ' ' + theCorrectAnswer+'</p><br><img src=assets/images/'+count+'.jpg>');
+            $("#showAnswer").html('<p>'+rightWrong + ' ' + theCorrectAnswer+'</p><br><img src=assets/images/'+count+'.jpg id="answerImage">');
             $("#question").hide();
             $("#answers").hide();
             $("#time").hide();
@@ -129,7 +125,6 @@ function stopDisplayCorrectAnswer() {
     textAnswer= false;
     answerSeconds =4;
 }
-
 
 //function that ends game
 //we hide and show correct divs
