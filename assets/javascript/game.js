@@ -41,7 +41,7 @@ function displayQuestion() {
 function runTimer() {
     if (!running){
     timerId = setInterval(decrementTime, 1000);
-    $("#time").text("30");
+    $("#time").text("Time Remaining: 30s");
     running = true;
     }
 }
@@ -53,7 +53,7 @@ function runTimer() {
 //add 1 to noAnswer and count
 function decrementTime() {
     seconds--;
-    $("#time").html("<h2>" + seconds + "</h2>");
+    $("#time").html("<h2>Time Remaining: " + seconds + "s</h2>");
     if (seconds <= 0) {
     stopTimer();
     runDisplayCorrectAnswer("Wrong", "Correct answer is " +answers[count]);
