@@ -3,7 +3,6 @@ var question = ["During the early stages of production, WHO auditioned for the r
 "A poster of WHAT RAPPER(S) can be seen in Summer's room on the door",
 "Who does the voice of Beth?",
 "When does season 3 come out?"];
-
 var questionAnswers = [['Bryan Cranston', 'The Rock', 'Kevin Hart', 'Brad Pitt'], 
 ['Justin Bieber', 'Chris Patt', 'Chris Parnell', 'Bryan Cranston'], 
 ["Tupac Shakur", "Lil Uzi Vert", "Wu-Tang Clan", "Ice Cube"],
