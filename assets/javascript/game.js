@@ -75,7 +75,7 @@ function decrementTime() {
 function stopTimer() {
     clearInterval(timerId);
     running = false;
-    $("#time").html('<img alt="activity indicator" src="assets/images/ajax-loader.gif" width="20%">');
+    $("#time").html('<img alt="activity indicator" src="assets/images/ajax-loader.gif" width="8%">');
     seconds = 30;
 }
 
@@ -120,7 +120,6 @@ function runDisplayCorrectAnswer(rightWrong, theCorrectAnswer){
             }
         }, 1000);
         textAnswer = true; 
-        console.log("textAnswer (in runDisplay end of if): " +textAnswer);   
     } 
 };
 //Clear displayCorrectId
@@ -129,7 +128,6 @@ function runDisplayCorrectAnswer(rightWrong, theCorrectAnswer){
 function stopDisplayCorrectAnswer() {
     clearInterval(displayCorrectId);
     textAnswer= false;
-    console.log("textAnswer (in stopDisplay): " +textAnswer);
     answerSeconds =4;
 }
 
@@ -143,8 +141,8 @@ function endGame() {
     $("#answers").hide();
     $("#time").hide();
     $("#tryAgain").show();
-    $("#showAnswer").text("You answered " + right + " right, " + wrong + " wrong, and "+noAnswer+ " unanswered");
-    $("#tryAgain").html("<button>TRY AGAIN?</button>");
+    $("#showAnswer").text("Score: " + right + " right, " + wrong + " wrong, and "+noAnswer+ " unanswered");
+    $("#tryAgain").html("<br><button>TRY AGAIN?</button>");
 }
 
 //functino to check answers
