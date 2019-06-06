@@ -1,17 +1,16 @@
-var question = ["During the early stages of production, WHO auditioned for the role of Jerry.",
-"Who does the voice Jerry?",
-"A poster of WHAT RAPPER(S) can be seen in Summer's room on the door",
-"Who does the voice of Beth?",
-"When does season 3 come out?"];
+var question = ["During the early stages of production, ___________ auditioned for the role of Jerry.",
+"______ does the voice Jerry (Morty's Father).",
+"A poster of _______ can be seen in Summer's room on the door.",
+"_______ does the voice of Beth (Morty's Mother).",
+"Pickle Rick first appears in ________"];
 var questionAnswers = [['Bryan Cranston', 'The Rock', 'Kevin Hart', 'Brad Pitt'], 
 ['Justin Bieber', 'Chris Patt', 'Chris Parnell', 'Bryan Cranston'], 
 ["Tupac Shakur", "Lil Uzi Vert", "Wu-Tang Clan", "Ice Cube"],
 ["Taylor Swift", "Sarah Chalke", "Naomi Scott", "Emilia Clarke"],
-["12-12-19", "08-18-19", "07-19-19", "It's already out"]];
-var answers = ["Bryan Cranston","Chris Parnell", "Tupac Shakur", "Sarah Chalke", "It's already out"];
+["Season 04", "Season 02", "Season 01", "Season 03"]];
+var answers = ["Bryan Cranston","Chris Parnell", "Tupac Shakur", "Sarah Chalke", "Season 03"];
 var displayCorrectId;
 var timerId;
-var textCorrectAnswer;
 var count = 0;
 var seconds = 30;
 var answerSeconds = 4;
@@ -230,7 +229,6 @@ window.onload = function() {
     $("#tryAgain").click(function(){
         displayCorrectId;
         timerId;
-        textCorrectAnswer;
         count = 0;
         seconds = 30;
         answerSeconds = 4;
