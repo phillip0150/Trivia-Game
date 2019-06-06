@@ -1,12 +1,30 @@
-body {
-    width: 100%;
+html, body {
     height: 100%;
+  }
+
+body {
     text-align: center;
-    font-size: 150%;
+    margin: 0;
+    background-image: url(../images/back.png);
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Space Mono', monospace;
+    color: white;
+
 }
 
 h1 {
     font-size: 300%;
+    padding: 10%;
+    
+}
+
+.btn {
+    background-color: grey;
+}
+
+#question {
+    padding: 5%;
 }
 
 
