@@ -9,6 +9,7 @@ Once you click on start:
 * At the end of the game, you are presented with your score and the option to play again.
 
 [Check out the Rick and Morty Trivia Game!](https://phillip0150.github.io/Trivia-Game/)
+
 [Check out the game on my portfolio page!](https://phillip0150.github.io/Bootstrap-Portfolio/portfolio.html)
 
 
