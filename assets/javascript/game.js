@@ -1,5 +1,5 @@
 var question = ["During the early stages of production, ___________ auditioned for the role of Jerry.",
-"______ does the voice Jerry (Morty's Father).",
+"______ does the voice of Jerry (Morty's Father).",
 "A poster of _______ can be seen in Summer's room on the door.",
 "_______ does the voice of Beth (Morty's Mother).",
 "Pickle Rick first appears in ________"];
